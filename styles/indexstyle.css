@@ -111,7 +111,7 @@
 
 .gallery__item {
   padding: 0em 0 1em 0em;
-  width: 90%;
+  width: 20%;
 }
 
 .main__description {
@@ -119,31 +119,10 @@
   font-weight: 550;
 }
 
-/* TERMINA MAIN */
-/* --------------------------------------- */
-/* EMPIEZA FOOTER */
+/* FOOTER */
+
 .container__footer {
-  display: flex;
+  background-color: #23ce6b;
   font-family: "Kanit", sans-serif;
   font-family: "Questrial", sans-serif;
-  background-color: #23ce6b;
-  justify-content: center;
-  align-items: center;
-  font-size: 0.9em;
-  height: 6vh;
-  color: #272d2d;
-  font-weight: bold;
 }
-
-.footer__links {
-  margin: 1em;
-  text-decoration: none;
-}
-
-i {
-  color: #272d2d;
-  padding: 0.2em;
-  font-size: 1em;
-}
-/* TERMINA FOOTER */
-/* --------------------------------------- */
