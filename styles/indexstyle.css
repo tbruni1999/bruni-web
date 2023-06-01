@@ -1,0 +1,149 @@
+/* RESET CSS */
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+/* RESET CSS */
+/* --------------------------------------- */
+/* GRIDS START */
+.container_grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "container__nav container__header"
+    "container__nav container__main"
+    "container__footer container__footer";
+  min-height: 100vh;
+}
+
+.container__header {
+  grid-area: container__header;
+}
+
+.container__nav {
+  grid-area: container__nav;
+}
+
+.container__main {
+  grid-area: container__main;
+}
+
+.container__footer {
+  grid-area: container__footer;
+}
+/* GRIDS END */
+
+/* --------------------------------------- */
+/* EMPIEZA HEADER */
+.container__header {
+  display: flex;
+  background-color: #272d2d;
+  font-family: "Kanit", sans-serif;
+  font-family: "Questrial", sans-serif;
+  flex-direction: column;
+  text-align: start;
+  padding: 2.3em 0 0 1em;
+  color: #ffffff;
+}
+/* TERMINA HEADER */
+/* -------------------------------------- */
+/* EMPIEZA NAV */
+.container__nav {
+  background-color: #ffffff;
+  position: sticky;
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  font-family: "Kanit", sans-serif;
+  font-family: "Questrial", sans-serif;
+  padding: 1em 0.5em 0 0.5em;
+  list-style: none;
+  position: relative;
+}
+
+.nav__item__logo {
+  display: flex;
+  justify-content: center;
+  padding: 1em 0 1em 0;
+  margin: 0 0 20px 0;
+}
+
+.nav__item {
+  display: flex;
+  padding: 10px;
+  margin: 0.3em;
+  font-size: 0.8em;
+  font-weight: bold;
+  background-color: #272d2d;
+  border-radius: 20px;
+  justify-content: center;
+}
+
+.nav__anchors {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.nav__anchors_active {
+  color: #23ce6b;
+  text-decoration: none;
+}
+
+/* TERMINA NAV */
+/* --------------------------------------- */
+/* EMPIEZA MAIN */
+.container__main {
+  display: flex;
+  font-family: "Kanit", sans-serif;
+  font-family: "Questrial", sans-serif;
+  background-color: #272d2d;
+  padding: 1em;
+  color: #ffffff;
+}
+
+.main__welcome {
+  padding: 1em 0 1em 0;
+}
+
+.gallery__item {
+  padding: 0em 0 1em 0em;
+  width: 90%;
+}
+
+.main__description {
+  font-size: 1em;
+  font-weight: 550;
+}
+
+/* TERMINA MAIN */
+/* --------------------------------------- */
+/* EMPIEZA FOOTER */
+.container__footer {
+  display: flex;
+  font-family: "Kanit", sans-serif;
+  font-family: "Questrial", sans-serif;
+  background-color: #23ce6b;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9em;
+  height: 6vh;
+  color: #272d2d;
+  font-weight: bold;
+}
+
+.footer__links {
+  margin: 1em;
+  text-decoration: none;
+}
+
+i {
+  color: #272d2d;
+  padding: 0.2em;
+  font-size: 1em;
+}
+/* TERMINA FOOTER */
+/* --------------------------------------- */
