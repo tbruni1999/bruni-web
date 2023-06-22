@@ -5,6 +5,7 @@
   box-sizing: border-box;
 }
 /* RESET CSS */
+
 /* --------------------------------------- */
 /* GRIDS START */
 .container_grid {
@@ -14,7 +15,7 @@
   grid-template-areas:
     "container__header container__main"
     "container__header container__main"
-    "container__footer container__footer";
+    "container__header container__footer";
   min-height: 100vh;
 }
 
@@ -40,49 +41,42 @@
   text-align: start;
   padding: 0 1em 1em 1em;
   flex-direction: column;
+  .nav__list {
+    display: flex;
+    flex-direction: column;
+    font-family: "Kanit", sans-serif;
+    font-family: "Questrial", sans-serif;
+    padding: 1em 0.5em 0 0.5em;
+    list-style: none;
+    .nav__item__logo {
+      display: flex;
+      justify-content: center;
+      padding: 1em 0 1em 0;
+      margin: 0 0 20px 0;
+    }
+    .nav__item {
+      display: flex;
+      padding: 14px;
+      margin: 0.3em;
+      font-size: 1em;
+      font-weight: bold;
+      background-color: #272d2d;
+      border-radius: 20px;
+      justify-content: center;
+      .nav__anchors_active {
+        color: #23ce6b;
+        text-decoration: none;
+      }
+      .nav__anchors {
+        text-decoration: none;
+        color: #ffffff;
+      }
+    }
+  }
 }
 /* TERMINA HEADER */
 /* -------------------------------------- */
-/* EMPIEZA NAV */
 
-.nav__list {
-  display: flex;
-  flex-direction: column;
-  font-family: "Kanit", sans-serif;
-  font-family: "Questrial", sans-serif;
-  padding: 1em 0.5em 0 0.5em;
-  list-style: none;
-}
-
-.nav__item__logo {
-  display: flex;
-  justify-content: center;
-  padding: 1em 0 1em 0;
-  margin: 0 0 20px 0;
-}
-
-.nav__item {
-  display: flex;
-  padding: 14px;
-  margin: 0.3em;
-  font-size: 1em;
-  font-weight: bold;
-  background-color: #272d2d;
-  border-radius: 20px;
-  justify-content: center;
-}
-
-.nav__anchors {
-  text-decoration: none;
-  color: #ffffff;
-}
-
-.nav__anchors_active {
-  color: #23ce6b;
-  text-decoration: none;
-}
-
-/* TERMINA NAV */
 /* --------------------------------------- */
 /* EMPIEZA MAIN */
 .container__main {
@@ -94,24 +88,21 @@
   color: #ffffff;
   text-align: start;
   flex-direction: column;
-}
-
-.main__welcome {
-  padding: 1em 0 1em 0;
-}
-
-.main__description {
-  font-size: 1em;
-  font-weight: 550;
-  padding: 1em;
-  border-radius: 1em;
-  text-align: start;
+  .main__welcome {
+    padding: 1em 0 1em 0;
+  }
+  .main__description {
+    font-size: 1em;
+    font-weight: 550;
+    padding: 1em;
+    border-radius: 1em;
+    text-align: start;
+  }
 }
 
 .card-body {
   background-color: #23ce6b;
 }
-
 .main__cards {
   margin-top: 4em;
 }
@@ -119,22 +110,23 @@
 .main__socials {
   display: flex;
   justify-content: center;
-}
-
-.socials__icons i {
-  font-size: 2em;
-  padding: 0.5em;
-  background-color: #23ce6b;
-  margin: 0.2em 0.7em 0 0;
-  border-radius: 60px;
-}
-.socials__icons a {
-  text-decoration: none;
-  color: #272d2d;
+  .socials__icons {
+    a {
+      text-decoration: none;
+      color: #272d2d;
+      i {
+        font-size: 2em;
+        padding: 0.5em;
+        background-color: #ffffff;
+        margin: 0.2em 0.7em 0 0;
+        border-radius: 60px;
+      }
+    }
+  }
 }
 
 .socials__icons a:hover {
-  color: #ffffff;
+  color: #23ce6b;
 }
 
 /* -------------------------------------- */
@@ -144,13 +136,14 @@
   background-color: #23ce6b;
   font-family: "Kanit", sans-serif;
   font-family: "Questrial", sans-serif;
+  padding: 1em;
+
+  .footer__copyright {
+    margin-top: 1em;
+    text-align: center;
+  }
 }
 
-.container__footer .container a {
-  color: #ffffff;
-  background-color: #272d2d;
-  margin-top: 1em;
-}
 /* -------------------------------------- */
 /* TERMINA FOOTER */
 /* -------------------------------------- */
@@ -163,20 +156,20 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  .gallery__item {
-    width: 50%;
+    .gallery__item {
+      width: 50%;
+    }
   }
 }
 @media (min-width: 992px) {
-  .main__description {
-    text-align: center;
-  }
-  .main__welcome {
-    text-align: center;
-  }
   .container__main {
     text-align: center;
+    .main__welcome {
+      text-align: center;
+    }
+    .main__description {
+      text-align: center;
+    }
   }
 }
 /* -------------------------------------- */
