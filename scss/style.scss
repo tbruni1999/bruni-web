@@ -4,10 +4,13 @@
   padding: 0%;
   box-sizing: border-box;
 }
+/* --------------------------------------- */
 /* RESET CSS */
-
+/* --------------------------------------- */
+/* /////////////////////////////////////////////////////////// */
 /* --------------------------------------- */
 /* GRIDS START */
+/* --------------------------------------- */
 .container_grid {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -30,10 +33,13 @@
 .container__footer {
   grid-area: container__footer;
 }
+/* --------------------------------------- */
 /* GRIDS END */
-
+/* --------------------------------------- */
+/* /////////////////////////////////////////////////////////// */
 /* --------------------------------------- */
 /* EMPIEZA HEADER */
+/* --------------------------------------- */
 .container__header {
   background-color: #ffffff;
   font-family: "Kanit", sans-serif;
@@ -74,11 +80,14 @@
     }
   }
 }
+/* -------------------------------------- */
 /* TERMINA HEADER */
 /* -------------------------------------- */
-
-/* --------------------------------------- */
+/* /////////////////////////////////////////////////////////// */
+/* -------------------------------------- */
 /* EMPIEZA MAIN */
+/* -------------------------------------- */
+
 .container__main {
   display: flex;
   font-family: "Kanit", sans-serif;
@@ -98,6 +107,26 @@
     border-radius: 1em;
     text-align: start;
   }
+  .main__socials {
+    display: flex;
+    justify-content: center;
+    .socials__icons a:hover {
+      color: #23ce6b;
+    }
+    .socials__icons {
+      a {
+        text-decoration: none;
+        color: #272d2d;
+        i {
+          font-size: 2em;
+          padding: 0.5em;
+          background-color: #ffffff;
+          margin: 0.2em 0.7em 0 0;
+          border-radius: 60px;
+        }
+      }
+    }
+  }
 }
 
 .card-body {
@@ -106,29 +135,10 @@
 .main__cards {
   margin-top: 4em;
 }
-
-.main__socials {
-  display: flex;
-  justify-content: center;
-  .socials__icons {
-    a {
-      text-decoration: none;
-      color: #272d2d;
-      i {
-        font-size: 2em;
-        padding: 0.5em;
-        background-color: #ffffff;
-        margin: 0.2em 0.7em 0 0;
-        border-radius: 60px;
-      }
-    }
-  }
-}
-
-.socials__icons a:hover {
-  color: #23ce6b;
-}
-
+/* -------------------------------------- */
+/* TERMINA MAIN */
+/* -------------------------------------- */
+/* /////////////////////////////////////////////////////////// */
 /* -------------------------------------- */
 /* FOOTER */
 /* -------------------------------------- */
@@ -137,6 +147,26 @@
   font-family: "Kanit", sans-serif;
   font-family: "Questrial", sans-serif;
   padding: 1em;
+  .footer__socials {
+    display: flex;
+    justify-content: center;
+    .footersocials__icons a:hover {
+      color: #23ce6b;
+    }
+    .footersocials__icons {
+      a {
+        text-decoration: none;
+        color: #272d2d;
+        i {
+          font-size: 2em;
+          padding: 0.5em;
+          background-color: #ffffff;
+          margin: 0.2em 0.7em 0 0;
+          border-radius: 60px;
+        }
+      }
+    }
+  }
 
   .footer__copyright {
     margin-top: 1em;
@@ -147,7 +177,7 @@
 /* -------------------------------------- */
 /* TERMINA FOOTER */
 /* -------------------------------------- */
-/* ------------------------------------------------------------------------------------*/
+/* /////////////////////////////////////////////////////////// */
 /* -------------------------------------- */
 /* MEDIA QUERIES */
 /* -------------------------------------- */
@@ -175,3 +205,4 @@
 /* -------------------------------------- */
 /* MEDIA QUERIES */
 /* -------------------------------------- */
+/* /////////////////////////////////////////////////////////// */
