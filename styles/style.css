@@ -52,6 +52,7 @@
 .container__nav {
   background-color: #ffffff;
   position: sticky;
+  padding: 0 0.5em 0 2em;
 }
 
 .nav__list {
@@ -73,9 +74,9 @@
 
 .nav__item {
   display: flex;
-  padding: 10px;
+  padding: 14px;
   margin: 0.3em;
-  font-size: 0.8em;
+  font-size: 1em;
   font-weight: bold;
   background-color: #272d2d;
   border-radius: 20px;
@@ -110,11 +111,6 @@
   padding: 1em 0 1em 0;
 }
 
-.gallery__item {
-  padding: 0em 0 1em 0em;
-  width: 10%;
-}
-
 .main__description {
   font-size: 1em;
   font-weight: 550;
@@ -127,10 +123,78 @@
   background-color: #23ce6b;
 }
 
-/* FOOTER */
+.main__cards {
+  margin-top: 4em;
+}
 
+.main__socials {
+  display: flex;
+  justify-content: center;
+}
+
+.socials__icons i {
+  font-size: 2em;
+  padding: 0.5em;
+  background-color: #23ce6b;
+  margin: 0.2em 0.7em 0 0;
+  border-radius: 60px;
+}
+.socials__icons a {
+  text-decoration: none;
+  color: #272d2d;
+}
+
+.socials__icons a:hover {
+  color: #ffffff;
+}
+
+/* -------------------------------------- */
+/* FOOTER */
+/* -------------------------------------- */
 .container__footer {
   background-color: #23ce6b;
   font-family: "Kanit", sans-serif;
   font-family: "Questrial", sans-serif;
 }
+
+.container__footer .container a {
+  color: #ffffff;
+  background-color: #272d2d;
+  margin-top: 1em;
+}
+/* -------------------------------------- */
+/* TERMINA FOOTER */
+/* -------------------------------------- */
+/* ------------------------------------------------------------------------------------*/
+/* -------------------------------------- */
+/* MEDIA QUERIES */
+/* -------------------------------------- */
+@media (max-width: 992px) {
+  .container__gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .gallery__item {
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .main__description {
+    text-align: center;
+  }
+
+  .container__header {
+    text-align: center;
+  }
+
+  .main__welcome {
+    text-align: center;
+  }
+  .container__main {
+    text-align: center;
+  }
+}
+/* -------------------------------------- */
+/* MEDIA QUERIES */
+/* -------------------------------------- */
