@@ -71,6 +71,9 @@
   border-radius: 20px;
   justify-content: center;
 }
+.container__header .nav__list .nav__item .nav__anchors:hover {
+  color: #23ce6b;
+}
 .container__header .nav__list .nav__item .nav__anchors_active {
   color: #23ce6b;
   text-decoration: none;
@@ -100,12 +103,22 @@
 .container__main .main__welcome {
   padding: 1em 0 1em 0;
 }
+.container__main .gallery__item {
+  margin-top: 5em;
+}
 .container__main .main__description {
   font-size: 1em;
   font-weight: 550;
   padding: 1em;
   border-radius: 1em;
   text-align: start;
+}
+.container__main .main__text {
+  font-size: 2.3em;
+  padding: 1em;
+  border-radius: 1em;
+  text-align: center;
+  margin-top: 2em;
 }
 .container__main .main__socials {
   display: flex;
@@ -124,6 +137,54 @@
   background-color: #ffffff;
   margin: 0.2em 0.7em 0 0;
   border-radius: 60px;
+}
+.container__main .main__section {
+  margin: 1em;
+}
+.container__main .main__section .main__section-container {
+  background-color: #23ce6b;
+  padding: 1em;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+.container__main .main__section .main__section-container .main__section-title {
+  color: #272d2d;
+  font-size: 1.5em;
+  margin: 0;
+}
+.container__main .main__section .main__section-description {
+  text-align: left;
+  font-size: 1em;
+  margin-top: 2em;
+  margin-bottom: 5em;
+}
+.container__main .main__section .section__buttons:hover {
+  background-color: #23ce6b;
+}
+.container__main .main__section .section__buttons-secondary:hover {
+  background-color: #23ce6b;
+}
+.container__main .main__section .section__buttons {
+  background-color: rgba(35, 206, 106, 0.3411764706);
+  padding: 1em;
+  border-color: #23ce6b;
+  border-style: solid;
+  border-radius: 1em;
+  text-decoration: none;
+  color: #ffffff;
+  border-width: 1px;
+}
+.container__main .main__section .section__buttons-secondary {
+  background-color: #272d2d;
+  padding: 1em;
+  border-color: #23ce6b;
+  border-style: solid;
+  border-radius: 1em;
+  text-decoration: none;
+  color: #ffffff;
+  border-width: 1px;
+  margin-left: 1em;
 }
 
 .card-body {
@@ -186,9 +247,15 @@
   .container__gallery .gallery__item {
     width: 50%;
   }
+  .container__main .main__text {
+    padding: 1em;
+    border-radius: 1em;
+    text-align: left;
+    font-size: 1.5em;
+  }
 }
 @media (min-width: 992px) {
-  .container__main {
+  .container__main .header__title {
     text-align: center;
   }
   .container__main .main__welcome {
@@ -196,6 +263,24 @@
   }
   .container__main .main__description {
     text-align: center;
+    margin: 0 10vw 0 10vw;
+  }
+  .container__main .main__text {
+    margin: 2em 10vw 0 10vw;
+  }
+  .main__section .main__section-container {
+    margin: 0 10vw 0 10vw;
+  }
+  .main__section .main__section-description {
+    margin: 0 10vw 0 10vw;
+  }
+  .section__buttons {
+    margin-left: 10vw;
+  }
+  .container__gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 /* -------------------------------------- */

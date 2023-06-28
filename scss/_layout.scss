@@ -1,0 +1,28 @@
+/* --------------------------------------- */
+/* GRIDS START */
+/* --------------------------------------- */
+.container_grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "container__header container__main"
+    "container__header container__main"
+    "container__header container__footer";
+  min-height: 100vh;
+}
+
+.container__header {
+  grid-area: container__header;
+}
+
+.container__main {
+  grid-area: container__main;
+}
+
+.container__footer {
+  grid-area: container__footer;
+}
+/* --------------------------------------- */
+/* GRIDS END */
+/* --------------------------------------- */

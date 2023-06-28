@@ -1,0 +1,53 @@
+/* /////////////////////////////////////////////////////////// */
+/* --------------------------------------- */
+/* EMPIEZA HEADER */
+/* --------------------------------------- */
+.container__header {
+  background-color: #ffffff;
+  font-family: "Kanit", sans-serif;
+  font-family: "Questrial", sans-serif;
+  text-align: start;
+  padding: 0 1em 1em 1em;
+  flex-direction: column;
+  .nav__list {
+    display: flex;
+    flex-direction: column;
+    font-family: "Kanit", sans-serif;
+    font-family: "Questrial", sans-serif;
+    padding: 1em 0.5em 0 0.5em;
+    list-style: none;
+    .nav__item__logo {
+      display: flex;
+      justify-content: center;
+      padding: 1em 0 1em 0;
+      margin: 0 0 20px 0;
+    }
+    .nav__item {
+      display: flex;
+      padding: 14px;
+      margin: 0.3em;
+      font-size: 1em;
+      font-weight: bold;
+      background-color: #272d2d;
+      border-radius: 20px;
+      justify-content: center;
+
+      .nav__anchors:hover {
+        color: #23ce6b;
+      }
+
+      .nav__anchors_active {
+        color: #23ce6b;
+        text-decoration: none;
+      }
+      .nav__anchors {
+        text-decoration: none;
+        color: #ffffff;
+      }
+    }
+  }
+}
+/* -------------------------------------- */
+/* TERMINA HEADER */
+/* -------------------------------------- */
+/* /////////////////////////////////////////////////////////// */

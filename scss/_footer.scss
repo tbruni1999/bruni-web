@@ -1,0 +1,40 @@
+/* /////////////////////////////////////////////////////////// */
+/* -------------------------------------- */
+/* FOOTER */
+/* -------------------------------------- */
+.container__footer {
+  background-color: #23ce6b;
+  font-family: "Kanit", sans-serif;
+  font-family: "Questrial", sans-serif;
+  padding: 1em;
+  .footer__socials {
+    display: flex;
+    justify-content: center;
+    .footersocials__icons a:hover {
+      color: #23ce6b;
+    }
+    .footersocials__icons {
+      a {
+        text-decoration: none;
+        color: #272d2d;
+        i {
+          font-size: 2em;
+          padding: 0.5em;
+          background-color: #ffffff;
+          margin: 0.2em 0.7em 0 0;
+          border-radius: 60px;
+        }
+      }
+    }
+  }
+
+  .footer__copyright {
+    margin-top: 1em;
+    text-align: center;
+  }
+}
+
+/* -------------------------------------- */
+/* TERMINA FOOTER */
+/* -------------------------------------- */
+/* /////////////////////////////////////////////////////////// */

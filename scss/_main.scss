@@ -1,0 +1,118 @@
+/* -------------------------------------- */
+/* EMPIEZA MAIN */
+/* -------------------------------------- */
+
+.container__main {
+  display: flex;
+  font-family: "Kanit", sans-serif;
+  font-family: "Questrial", sans-serif;
+  background-color: #272d2d;
+  padding: 1em;
+  color: #ffffff;
+  text-align: start;
+  flex-direction: column;
+
+  .main__welcome {
+    padding: 1em 0 1em 0;
+  }
+
+  .gallery__item {
+    margin-top: 5em;
+  }
+
+  .main__description {
+    font-size: 1em;
+    font-weight: 550;
+    padding: 1em;
+    border-radius: 1em;
+    text-align: start;
+  }
+
+  .main__text {
+    font-size: 2.3em;
+    padding: 1em;
+    border-radius: 1em;
+    text-align: center;
+    margin-top: 2em;
+  }
+  .main__socials {
+    display: flex;
+    justify-content: center;
+    .socials__icons a:hover {
+      @include greencolor;
+    }
+    .socials__icons {
+      a {
+        text-decoration: none;
+        color: #272d2d;
+        i {
+          font-size: 2em;
+          padding: 0.5em;
+          background-color: #ffffff;
+          margin: 0.2em 0.7em 0 0;
+          border-radius: 60px;
+        }
+      }
+    }
+  }
+  .main__section {
+    margin: 1em;
+    .main__section-container {
+      background-color: #23ce6b;
+      padding: 1em;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      .main__section-title {
+        color: #272d2d;
+        font-size: 1.5em;
+        margin: 0;
+      }
+    }
+    .main__section-description {
+      text-align: left;
+      font-size: 1em;
+      margin-top: 2em;
+      margin-bottom: 5em;
+    }
+
+    .section__buttons:hover {
+      background-color: #23ce6b;
+    }
+    .section__buttons-secondary:hover {
+      background-color: #23ce6b;
+    }
+
+    .section__buttons {
+      background-color: #23ce6a57;
+      padding: 1em;
+      border-color: #23ce6b;
+      border-style: solid;
+      border-radius: 1em;
+      text-decoration: none;
+      color: #ffffff;
+      border-width: 1px;
+    }
+    .section__buttons-secondary {
+      background-color: #272d2d;
+      padding: 1em;
+      border-color: #23ce6b;
+      border-style: solid;
+      border-radius: 1em;
+      text-decoration: none;
+      color: #ffffff;
+      border-width: 1px;
+      margin-left: 1em;
+    }
+  }
+}
+
+.card-body {
+  background-color: #23ce6b;
+}
+.main__cards {
+  margin-top: 4em;
+}
+/* -------------------------------------- */
+/* TERMINA MAIN */
+/* -------------------------------------- */
