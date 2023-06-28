@@ -3,7 +3,9 @@
 /* FOOTER */
 /* -------------------------------------- */
 .container__footer {
-  background-color: #23ce6b;
+  background: linear-gradient(-45deg, #d1ee52, #23ce6b, #4cd523, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 2s ease infinite;
   font-family: "Kanit", sans-serif;
   font-family: "Questrial", sans-serif;
   padding: 1em;

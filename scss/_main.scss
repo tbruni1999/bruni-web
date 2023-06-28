@@ -21,11 +21,13 @@
   }
 
   .main__description {
+    margin-top: 1em;
     font-size: 1em;
     font-weight: 550;
     padding: 1em;
     border-radius: 1em;
     text-align: start;
+    border: #23ce6b 0.1em solid;
   }
 
   .main__text {
@@ -107,8 +109,12 @@
   }
 }
 
-.card-body {
-  background-color: #23ce6b;
+.card__link {
+  text-decoration: none;
+  color: #272d2d;
+  .card-body {
+    background-color: #23ce6b;
+  }
 }
 .main__cards {
   margin-top: 4em;
