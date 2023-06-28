@@ -121,6 +121,7 @@
   border-radius: 1em;
   text-align: center;
   margin-top: 2em;
+  margin-bottom: 2em;
 }
 .container__main .main__socials {
   display: flex;
@@ -198,7 +199,7 @@
 }
 
 .main__cards {
-  margin-top: 4em;
+  margin-top: 1em;
 }
 
 /* -------------------------------------- */
@@ -271,7 +272,7 @@
   }
   .container__main .main__description {
     text-align: center;
-    margin: 0 10vw 0 10vw;
+    margin: 0 10vw 2em 10vw;
     margin-top: 2em;
   }
   .container__main .main__text {
