@@ -19,6 +19,14 @@
       font-size: 1.5em;
     }
   }
+  .container__header {
+    .nav-link {
+      margin-top: 10px;
+    }
+    .navbar-brand {
+      display: none;
+    }
+  }
 }
 @media (min-width: 992px) {
   .container__main {
@@ -53,6 +61,34 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+}
+
+@media (max-width: 452px) {
+  .container__header {
+    background-color: #ffffff;
+    font-family: "Kanit", sans-serif;
+    font-family: "Questrial", sans-serif;
+    text-align: start;
+    padding: 0 3px 1em 2px;
+    flex-direction: column;
+    .nav-link {
+      margin-top: 10px;
+    }
+  }
+
+  .container__main {
+    .section__buttons {
+      display: none;
+      background-color: #23ce6a57;
+      padding: 1em;
+      border-color: #23ce6b;
+      border-style: solid;
+      border-radius: 1em;
+      text-decoration: none;
+      color: #ffffff;
+      border-width: 1px;
+    }
   }
 }
 /* -------------------------------------- */

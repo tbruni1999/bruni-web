@@ -6,9 +6,9 @@
   grid-template-columns: auto 1fr;
   grid-template-rows: auto 1fr auto;
   grid-template-areas:
-    "container__header container__main"
-    "container__header container__main"
-    "container__header container__footer";
+    "container__header container__header"
+    "container__main container__main"
+    "container__footer container__footer";
   min-height: 100vh;
 }
 
