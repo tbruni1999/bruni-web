@@ -109,10 +109,16 @@
     }
   }
 }
+.card-body:hover {
+  background: linear-gradient(-45deg, #d1ee52, #23bace, #4cd523, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 2s ease infinite;
+}
 
 .card__link {
   text-decoration: none;
   color: #272d2d;
+
   .card-body {
     background-color: #23ce6b;
   }
